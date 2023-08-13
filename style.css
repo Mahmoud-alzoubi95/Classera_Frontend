@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@300;400&display=swap');
+
+
+
+:root {
+
+    --body-color: #fff;
+  
+    --light-body-color: #f9fbfc;
+  
+    --dashboard-body-color: #f9fbfc;
+  
+    --white-color: #fff;
+  
+    --primary-color: #4285f4;
+  
+    --toggle-color: #ddd;
+  
+    --text-color: rgba(0, 0, 0, 1);
+  
+    --light-text-color: #4e5559;
+  
+    --white-text-color: #fff;
+  
+    --border-color: #e6e7e9;
+  
+    --input-border-color: #747a7e;
+  
+    /* --border-color: rgba(0, 0, 0, 0.3); */
+
+    --tran-02: all 0.2s ease;
+  
+    --tran-03: all 0.3s ease;
+  
+    --tran-04: all 0.4s ease;
+  
+    --tran-05: all 0.5s ease;
+  
+    --tran-06: all 0.6s ease;
+  
+    --tran-07: all 0.7s ease;
+  
+    --tran-08: all 0.8s ease;
+  
+  }
+  
+  body {
+  
+    height: 100vh;
+  
+    background: var(--body-color);
+  
+    transition: var(--tran-05);
+  
+    overflow-x: hidden;
+  
+    overflow-y: hidden;
+  
+    box-sizing: border-box;
+  }
+
+  .container{
+    display: grid;
+    width: 96%;
+    /* margin: 0 auto; */
+    gap: 1rem;
+    grid-template-columns: 12rem 1fr 1fr 1fr 1fr;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  aside{
+    grid-column: 1;
+    height: 100%;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    padding: 0 0.2rem 0 0.2rem;
+  }
+
+  aside .top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  aside .top .logo{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    
+  }
+
+  aside .top img{
+    width: 5rem;
+    height: 5rem;
+  }
+
+  aside .sidebar{
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    position: relative;
+    top: 0.5rem;
+    font-size: 12px;
+    /* background-color: #747a7e; */
+  }
+
+  aside .sidebar a{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 0.25rem;
+    height: 3rem;
+    color: var(--light-text-color);
+    font-family: 'Roboto', sans-serif;
+  }
+
+  aside .sidebar a:hover{
+    background-color: var(--toggle-color);
+    border-radius: 10px;
+  }
+
+  span{
+    margin-left: 0.5rem;
+  }
+
